@@ -1,3 +1,92 @@
-<h1>Este es un sitio web con Github Pages</h1>
-<p>Y fue creado con amor para el Curso de Git y Github de Platzi</p>
-<p><img src="https://i.imgur.com/PfA0M2o.gif" /></p>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Página con videos divertidos de animales para alegrar tu día">
+    <meta name="keywords" content="videos de animales, diversión, animales divertidos">
+    <meta name="author" content="Jesús">
+    <title>Videos Divertidos de Animales</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        main {
+            padding: 20px;
+        }
+        .video-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin: 20px 0;
+        }
+        .video-item {
+            background: white;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .video-item iframe {
+            width: 100%;
+            height: 200px;
+            border: none;
+        }
+        .video-item h3 {
+            margin: 0;
+            padding: 10px;
+            background-color: #f4f4f4;
+            text-align: center;
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Videos Divertidos de Animales</h1>
+        <p>¡Descubre los momentos más graciosos de nuestras queridas mascotas y animales!</p>
+    </header>
+    <main>
+        <div class="video-container">
+            <div class="video-item">
+                <iframe src="https://www.youtube.com/embed/tgbNymZ7vqY" allowfullscreen></iframe>
+                <h3>Perros haciendo travesuras</h3>
+            </div>
+            <div class="video-item">
+                <iframe src="https://www.youtube.com/embed/ZRbc07lNZ1Y" allowfullscreen></iframe>
+                <h3>Gatos saltando y fallando</h3>
+            </div>
+            <div class="video-item">
+                <iframe src="https://www.youtube.com/embed/3v3TNsNLDn8" allowfullscreen></iframe>
+                <h3>Pájaros hablando</h3>
+            </div>
+            <div class="video-item">
+                <iframe src="https://www.youtube.com/embed/WJb41Vs8moQ" allowfullscreen></iframe>
+                <h3>Mapaches comediantes</h3>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2025 Videos Divertidos de Animales. Diseñado por Jesús.</p>
+    </footer>
+</body>
+</html>
+
